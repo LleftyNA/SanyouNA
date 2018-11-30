@@ -1,14 +1,10 @@
-// PS! Replace this with your own channel ID
-
-// If you use this channel ID your app will stop working in the future
-
 const CLIENT_ID = 'kbFLiGX7HoaJYdXe';
 
 
 
 const drone = new ScaleDrone(CLIENT_ID, {
 
-  data: { // Will be sent out as clientData via events
+  data: {
 
     name: getRandomName(),
 
@@ -120,9 +116,9 @@ drone.on('error', error => {
 
 function getRandomName() {
 
-  const adjs = ["autumn", "hidden", "bitter", "misty", "silent", "empty", "dry", "dark", "summer", "icy", "delicate", "quiet", "white", "cool", "spring", "winter", "patient", "twilight", "dawn", "crimson", "wispy", "weathered", "blue", "billowing", "broken", "cold", "damp", "falling", "frosty", "green", "long", "late", "lingering", "bold", "little", "morning", "muddy", "old", "red", "rough", "still", "small", "sparkling", "throbbing", "shy", "wandering", "withered", "wild", "black", "young", "holy", "solitary", "fragrant", "aged", "snowy", "proud", "floral", "restless", "divine", "polished", "ancient", "purple", "lively", "nameless"];
+  const adjs = ["帅气的", "浪漫的", "邪恶的", "美丽的", "安静的", "脑残的", "性感的", "裸奔的", "中二的", "秀气的", "英俊的", "恶心的", "白毛的", "恶臭的", "搞基的", "冷酷的", "头皮发麻的", "孤独的", "令人犯罪的", "坏了的"]
 
-  const nouns = ["waterfall", "river", "breeze", "moon", "rain", "wind", "sea", "morning", "snow", "lake", "sunset", "pine", "shadow", "leaf", "dawn", "glitter", "forest", "hill", "cloud", "meadow", "sun", "glade", "bird", "brook", "butterfly", "bush", "dew", "dust", "field", "fire", "flower", "firefly", "feather", "grass", "haze", "mountain", "night", "pond", "darkness", "snowflake", "silence", "sound", "sky", "shape", "surf", "thunder", "violet", "water", "wildflower", "wave", "water", "resonance", "sun", "wood", "dream", "cherry", "tree", "fog", "frost", "voice", "paper", "frog", "smoke", "star"];
+  const nouns = ["美男子", "野兽", "月光", "大雕", "沙壁", "教授", "肌肉男", "大胸妹", "女孩", "猎人", "厨师", "猫", "狗", "叶子", "夕阳", "打鸡王", "真男人", "基佬", "王子", "单身狗", "太阳", "鸟", "蝴蝶", "排泄物", "肉便器"]
 
   return (
 
