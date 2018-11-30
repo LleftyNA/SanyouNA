@@ -88,8 +88,6 @@ drone.on('open', error => {
 
     } else {
 
-      // Message is from server
-
     }
 
   });
@@ -142,7 +140,7 @@ function getRandomColor() {
 
 
 
-//------------- DOM STUFF
+//DOM.SFU
 
 
 
